@@ -1,0 +1,86 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>WebsiteLayout1</title>
+    <link rel="shortcut icon"href="./assets/fav.png">
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    display: flex;
+    flex-flow: column wrap;
+    background: rgb(117, 126, 98);
+    align-content: center;
+    font-weight: bold;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <header>QUOTES</header>
+  <div id="main">
+    <article>
+        <h2>First Quote</h2>
+        <p>Be the change that you wish to see in the world.</p>
+    </article>
+    <article>
+        <h2>Second Quote</h2>
+        <p>Live as if you were to die tomorrow.
+           Learn as if you were to live forever.</p>
+    </article>
+    <article>
+        <h2>Third Quote</h2>
+        <p>There are only two ways to live your life.
+           One is as though nothing is a miracle.
+           The other is as though everything is a miracle.</p>
+    </article>
+    <nav>
+        TOP QUOTES:
+        <ul>
+            <li>Change your life today. Don't gamble on the future, act now, without delay.</li>
+            <li>The science of today is the technology of tomorrow.</li>
+            <li>Dream as if you'll live forever. Live as if you'll die today.</li>
+        </ul>
+    </nav>
+    <aside>
+        CATEGORIES:
+        <ul>
+            <li>Life</li>
+            <li>Inspirational</li>
+            <li>Travel</li>
+        </ul>
+    </aside>
+
+  </div>
+  <footer>THANK YOU !</footer>
+</body>
+</head>
